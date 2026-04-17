@@ -42,11 +42,7 @@ Developed a data cleaning and transformation pipeline using **pandas** to ensure
 
 The analysis was finalized into an interactive Power BI dashboard to present insights visually for stakeholders.
 
-\<p align="center"\>
-\<img width="800" alt="customer\_behavior\_dashboard" src="[https://app.powerbi.com/view?r=eyJrIjoiOTI3MTNlYjQtZGI2My00OGU4LTllNTktOTM4MTkzZjEzNjhhIiwidCI6Ijg4ZDQ0NWU1LWU5YjAtNGNkMy04MTVmLTQwZjhhMzAwOWI0MiIsImMiOjEwfQ%3D%3D\&embedImagePlaceholder=true](https://app.powerbi.com/view?r=eyJrIjoiOTI3MTNlYjQtZGI2My00OGU4LTllNTktOTM4MTkzZjEzNjhhIiwidCI6Ijg4ZDQ0NWU1LWU5YjAtNGNkMy04MTVmLTQwZjhhMzAwOWI0MiIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true)" /\>
-\</p\>
-\<p align="center"\>Figure 01: Interactive Customer Behavior Dashboard (3,900 Purchases)\</p\>
-
+[**View Live Power BI Dashboard**](https://app.powerbi.com/view?r=eyJrIjoiOTI3MTNlYjQtZGI2My00OGU4LTllNTktOTM4MTkzZjEzNjhhIiwidCI6Ijg4ZDQ0NWU1LWU5YjAtNGNkMy04MTVmLTQwZjhhMzAwOWI0MiIsImMiOjEwfQ%3D%3D)
 -----
 
 ### 3\. Key SQL Business Queries & Results
