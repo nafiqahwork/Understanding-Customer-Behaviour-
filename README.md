@@ -1,56 +1,109 @@
-# Customer Shopping Behavior Analysis
+## Customer Shopping Behavior Analysis
 
 ## Project Overview
-his project provides a comprehensive analysis of consumer shopping patterns for a leading retail company[cite: 1, 2]. By leveraging data across 3,900 purchases, the analysis uncovers critical insights into spending habits, customer segmentation, and purchase drivers to optimize marketing and product strategies.
 
-The project follows a full data pipeline: **Python** for cleaning and ETL, **PostgreSQL** for deep-dive transactional analysis, and **Power BI** for interactive visualization.
+This project analyzes customer shopping behavior using transactional data from 3,900 purchases to guide strategic business decisions. The goal is to leverage consumer shopping data to identify trends, improve customer engagement, and optimize marketing and product strategies. The analysis follows a comprehensive data pipeline: preparing and cleaning data in **Python**, performing structured analysis in **PostgreSQL**, and building an interactive dashboard in **Power BI**.
 
-## Dataset Summary
-The dataset consists of **3,900 rows** and **18 columns**, featuring:
-* **Demographics:** Age, Gender, Location, and Subscription Status.
-* **Transaction Details:** Item Purchased, Category, Purchase Amount, and Season.
-* **Behavioral Data:** Review Ratings, Shipping Type, Previous Purchases, and Discount Usage.
+-----
 
-## Tools & Technologies
-* **Python (Pandas):** Data cleaning, missing value imputation, and feature engineering.
-* **PostgreSQL:** Relational database management and complex business logic queries.
-* **Power BI:** Interactive dashboard development for stakeholder reporting.
-* **SQLAlchemy:** Integration for automated data loading from Python to SQL.
+## Problem
 
-## Project Steps
+A leading retail company needs to better understand its customers' shopping behavior to improve sales and long-term loyalty. Management has identified a critical challenge:
 
-### 1. Data Preparation & Cleaning (Python)
-* **Initial EDA:** Explored data structure using `df.info()` and summary statistics.
-* **Data Quality:** Imputed missing values in the Review Rating column using category medians and standardized column naming to snake_case.
-* **Feature Engineering:** Created new features such as `age_group` (binned ages) and `purchase_frequency_days`.
-* **Database Integration:** Successfully loaded the processed dataset into a PostgreSQL server for structured analysis.
+  * Noticing changes in purchasing patterns across demographics, product categories, and sales channels.
+  * Identifying which specific factors, such as discounts, reviews, seasons, or payment preferences, drive consumer decisions and repeat purchases.
 
-### 2. Business Analysis (SQL)
-Conducted deep-dive queries to answer key business questions:
-* **Revenue Analysis:** Found that Male customers generated significantly higher total revenue ($157,890) compared to Female customers ($75,191).
-* **Segmentation:** Classified the user base into New, Returning, and Loyal segments, identifying over 3,000 "Loyal" customers.
-* **Purchase Drivers:** Analyzed the impact of shipping types and discount rates on purchase volume.
+Failure to leverage this data effectively puts the organization at risk of:
 
-### 3. Data Visualization (Power BI)
-Developed an interactive dashboard focusing on:
-* High-level KPIs: Total Customers (3.9K), Average Spend ($59.76), and Average Rating (3.75).
-* Category performance (Revenue and Sales volume).
-* Customer distribution by Age Group and Subscription Status.
+  * Missing key trends in customer engagement.
+  * Lacking data-driven insights for product and marketing optimization.
+  * Inefficient strategy development for customer retention.
 
-## Key Results & Insights
-* **Young Adults** represent the highest revenue-generating age segment.
-* **Clothing** is the top-selling category by both volume and revenue.
-* Customers with more than 5 previous purchases show a notable distribution between subscribers and non-subscribers, indicating a massive opportunity for loyalty conversion.
+-----
 
-## Business Recommendations
-* **Targeted Marketing:** Focus campaigns on high-revenue age groups (Young Adults) and users preferring express shipping.
-* **Subscription Growth:** Promote exclusive benefits to the 73% of customers who are currently non-subscribers.
-* **Loyalty Retention:** Implement rewards programs specifically for the "Loyal" segment to maintain long-term engagement.
+## Methodology
 
-## Interactive Dashboard
-[**View Live Power BI Dashboard**](https://app.powerbi.com/view?r=eyJrIjoiOTI3MTNlYjQtZGI2My00OGU4LTllNTktOTM4MTkzZjEzNjhhIiwidCI6Ijg4ZDQ0NWU1LWU5YjAtNGNkMy04MTVmLTQwZjhhMzAwOWI0MiIsImMiOjEwfQ%3D%3D)
+### 1\. Data Preparation & Exploratory Analysis (Python)
 
-## How to Run
-1.  **Python:** Run the `cleaning_script.py` to process the raw CSV and load it into your local PostgreSQL instance.
-2.  **SQL:** Execute the scripts in `analysis_queries.sql` to generate business insights.
-3.  **Power BI:** Open the `.pbix` file to explore the interactive visualizations locally.
+Developed a data cleaning and transformation pipeline using **pandas** to ensure data quality.
+
+  * **Initial Exploration**: Used `df.info` and `describe()` to check structure and summary statistics.
+  * **Cleaning**: Imputed missing values in the Review Rating column using category medians and renamed columns to snake\_case for readability.
+  * **Feature Engineering**: Created an `age_group` column by binning ages and established a `purchase_frequency_days` feature.
+
+### 2\. Database Integration & SQL Analysis
+
+  * **Integration**: Connected the Python script to **PostgreSQL** to load the cleaned DataFrame into a structured format for analysis.
+  * **Business Transactions**: Performed structured analysis to answer key business questions, including revenue by gender, top products by rating, and customer segmentation.
+
+-----
+
+### Dashboard Visualization
+
+The analysis was finalized into an interactive Power BI dashboard to present insights visually for stakeholders.
+
+\<p align="center"\>
+\<img width="800" alt="customer\_behavior\_dashboard" src="[https://app.powerbi.com/view?r=eyJrIjoiOTI3MTNlYjQtZGI2My00OGU4LTllNTktOTM4MTkzZjEzNjhhIiwidCI6Ijg4ZDQ0NWU1LWU5YjAtNGNkMy04MTVmLTQwZjhhMzAwOWI0MiIsImMiOjEwfQ%3D%3D\&embedImagePlaceholder=true](https://app.powerbi.com/view?r=eyJrIjoiOTI3MTNlYjQtZGI2My00OGU4LTllNTktOTM4MTkzZjEzNjhhIiwidCI6Ijg4ZDQ0NWU1LWU5YjAtNGNkMy04MTVmLTQwZjhhMzAwOWI0MiIsImMiOjEwfQ%3D%3D&embedImagePlaceholder=true)" /\>
+\</p\>
+\<p align="center"\>Figure 01: Interactive Customer Behavior Dashboard (3,900 Purchases)\</p\>
+
+-----
+
+### 3\. Key SQL Business Queries & Results
+
+  * **Revenue by Gender**: Identified that Male customers generated $157,890 while Female customers generated $75,191.
+  * **Customer Segmentation**: Classified the database into **Loyal (3,116)**, **Returning (701)**, and **New (83)** segments.
+  * **Subscribers vs. Non-Subscribers**: Found that while non-subscribers are the majority (2,847), subscribers have a comparable average spend of $59.49.
+
+-----
+
+## Results
+
+### Performance Benchmarks (EDA Summary)
+
+| Metric | Value |
+| :--- | :--- |
+| Total Purchases | 3,900 |
+| Average Purchase | $59.76 |
+| Average Review Rating | 3.75 |
+| Top Category | Clothing |
+
+-----
+
+## Strategic Business Insights
+
+The analysis revealed critical areas for growth:
+
+  * **Demographic Opportunities**: Young Adults represent the highest revenue contribution at $62,143.
+  * **Subscription Drivers**: Checked whether customers with more than 5 previous purchases are more likely to subscribe to target for conversion.
+  * **Product Strategy**: Highlighting top-rated items like Gloves and Sandals can drive engagement.
+
+## Scalable Forecasting Framework
+
+Delivered a modular project structure that can be updated with:
+
+  * New transactional data via the Python ETL script.
+  * Advanced SQL queries to track changing loyalty segments.
+  * Real-time dashboard updates in Power BI to support stakeholder decision-making.
+
+-----
+
+## Tech Stack
+
+| Category | Tools |
+| :--- | :--- |
+| **Data Processing** | Python (pandas, numpy) |
+| **Database** | PostgreSQL |
+| **Visualization** | Power BI |
+| **Integration** | SQLAlchemy (Python-to-SQL connection) |
+
+-----
+
+## Key Skills Demonstrated
+
+  * Data Preparation & ETL
+  * SQL Business Logic & Querying
+  * Customer Segmentation & Profiling
+  * Interactive Dashboard Design
+  * Business Data Storytelling
+  * GitHub Repository Management
