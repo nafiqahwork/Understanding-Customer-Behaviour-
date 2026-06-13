@@ -8,7 +8,7 @@ This project analyzes customer shopping behavior using transactional data from 3
 
 ## Problem
 
-A leading retail company needs to better understand its customers' shopping behavior to improve sales and long-term loyalty. Management has identified a critical challenge:
+A leading retail company needs to better understand its customers' shopping behavior to improve sales and long term loyalty. Management has identified a critical challenge:
 
   * Noticing changes in purchasing patterns across demographics, product categories, and sales channels.
   * Identifying which specific factors, such as discounts, reviews, seasons, or payment preferences, drive consumer decisions and repeat purchases.
@@ -16,7 +16,7 @@ A leading retail company needs to better understand its customers' shopping beha
 Failure to leverage this data effectively puts the organization at risk of:
 
   * Missing key trends in customer engagement.
-  * Lacking data-driven insights for product and marketing optimization.
+  * Lacking data driven insights for product and marketing optimization.
   * Inefficient strategy development for customer retention.
 
 -----
@@ -49,7 +49,7 @@ The analysis was finalized into an interactive Power BI dashboard to present ins
 
   * **Revenue by Gender**: Identified that Male customers generated $157,890 while Female customers generated $75,191.
   * **Customer Segmentation**: Classified the database into **Loyal (3,116)**, **Returning (701)**, and **New (83)** segments.
-  * **Subscribers vs. Non-Subscribers**: Found that while non-subscribers are the majority (2,847), subscribers have a comparable average spend of $59.49.
+  * **Subscribers vs. Non Subscribers**: Found that while non subscribers are the majority (2,847), subscribers have a comparable average spend of $59.49.
 
 -----
 
@@ -72,7 +72,7 @@ The analysis revealed critical areas for growth:
 
   * **Demographic Opportunities**: Young Adults represent the highest revenue contribution at $62,143.
   * **Subscription Drivers**: Checked whether customers with more than 5 previous purchases are more likely to subscribe to target for conversion.
-  * **Product Strategy**: Highlighting top-rated items like Gloves and Sandals can drive engagement.
+  * **Product Strategy**: Highlighting top rated items like Gloves and Sandals can drive engagement.
 
 ## Scalable Forecasting Framework
 
@@ -80,7 +80,7 @@ Delivered a modular project structure that can be updated with:
 
   * New transactional data via the Python ETL script.
   * Advanced SQL queries to track changing loyalty segments.
-  * Real-time dashboard updates in Power BI to support stakeholder decision-making.
+  * Real time dashboard updates in Power BI to support stakeholder decision making.
 
 -----
 
