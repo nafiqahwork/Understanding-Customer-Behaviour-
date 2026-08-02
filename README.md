@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project analyzes customer shopping behavior using transactional data from 3,900 purchases to guide strategic business decisions. The goal is to leverage consumer shopping data to identify trends, improve customer engagement, and optimize marketing and product strategies. The analysis follows a comprehensive data pipeline: preparing and cleaning data in **Python**, performing structured analysis in **PostgreSQL**, and building an interactive dashboard in **Power BI**.
+This project analyzes customer shopping behavior using transactional data from 3,900 purchases to guide strategic business decisions. The goal is to leverage consumer shopping data to identify trends, improve customer engagement and optimize marketing and product strategies. The analysis follows a comprehensive data pipeline: preparing and cleaning data in **Python**, performing structured analysis in **PostgreSQL**, and building an interactive dashboard in **Power BI**.
 
 -----
 
