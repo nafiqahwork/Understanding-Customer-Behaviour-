@@ -10,7 +10,7 @@ This project analyzes customer shopping behavior using transactional data from 3
 
 A leading retail company needs to better understand its customers' shopping behavior to improve sales and long term loyalty. Management has identified a critical challenge:
 
-  * Noticing changes in purchasing patterns across demographics, product categories, and sales channels.
+  * Noticing changes in purchasing patterns across demographics, product categories and sales channels.
   * Identifying which specific factors, such as discounts, reviews, seasons, or payment preferences, drive consumer decisions and repeat purchases.
 
 Failure to leverage this data effectively puts the organization at risk of:
@@ -34,7 +34,7 @@ Developed a data cleaning and transformation pipeline using **pandas** to ensure
 ### 2\. Database Integration & SQL Analysis
 
   * **Integration**: Connected the Python script to **PostgreSQL** to load the cleaned DataFrame into a structured format for analysis.
-  * **Business Transactions**: Performed structured analysis to answer key business questions, including revenue by gender, top products by rating, and customer segmentation.
+  * **Business Transactions**: Performed structured analysis to answer key business questions, including revenue by gender, top products by rating and customer segmentation.
 
 -----
 
@@ -48,7 +48,7 @@ The analysis was finalized into an interactive Power BI dashboard to present ins
 ### 3\. Key SQL Business Queries & Results
 
   * **Revenue by Gender**: Identified that Male customers generated $157,890 while Female customers generated $75,191.
-  * **Customer Segmentation**: Classified the database into **Loyal (3,116)**, **Returning (701)**, and **New (83)** segments.
+  * **Customer Segmentation**: Classified the database into **Loyal (3,116)**, **Returning (701)** and **New (83)** segments.
   * **Subscribers vs. Non Subscribers**: Found that while non subscribers are the majority (2,847), subscribers have a comparable average spend of $59.49.
 
 -----
